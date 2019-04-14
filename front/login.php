@@ -3,9 +3,7 @@ include_once '../inc/config.inc.php';
 include_once '../inc/mysql.inc.php';
 include_once '../inc/tools.inc.php';
 $link=connect();
-if(!$member_id=is_login($link)){
-	skip('login.php', 'error', '请登录!');
-}
+
 if(isset($_POST['submit'])){
     include 'inc/check_login.inc.php';
     
@@ -58,7 +56,7 @@ $template['css']=array('style/public.css','style/index.css');
     <small id="emailHelp" class="form-text text-muted">*公共电脑上请勿长期自动登录</small>
    
     </div>
-  <button type="submit" name= "submit" class="btn btn-outline-secondary btn-lg">提交</button>
+  <button type="submit" name= "submit" class="btn btn-outline-secondary btn-lg">登录</button>
 </form>
 </div>
 

@@ -51,15 +51,16 @@ foreach ($template['css'] as $val){
         <a class="nav-link" style="font-size:15px;" href="system_login.php">后台管理</a>
 	  </li>
 	  <?php
-			  if($member_id){
+
+			  if(isset($member_id)){
 				$str=<<<A
 									<a class="nav-link " style="margin: 0px 0px 0px 650px;float:right; font-size:15px;">您好！{$_COOKIE['sfk']['name']}</a>
 A;
 									echo $str;		
 								}else{
 				$str=<<<A
-									<a class="nav-link" style="font-size:15px;" href='login.php'>登录</a>&nbsp;
-									<a class="nav-link" style="font-size:15px;" href='register.php'>注册</a>
+									<a class="nav-link" style="font-size:15px;position:absolute;right:100px;" href='login.php'>登录</a>&nbsp;
+									<a class="nav-link" style="font-size:15px;position:absolute;right:40px;" href='register.php'>注册</a>
 A;
 									echo $str;
 								}

@@ -51,7 +51,7 @@ $template['css']=array('style/public.css');
     <img  src="show_code.php" />
     <div style="clear:both;"></div>
   </div>
-  <button type="submit" name= "submit" class="btn btn-outline-secondary btn-lg">提交</button>
+  <button type="submit" name= "submit" class="btn btn-outline-secondary btn-lg">注册</button>
 </form>
 </div>
 
