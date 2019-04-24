@@ -18,7 +18,7 @@ function vcode($width=120,$height=40,$fontSize=15,$countElement=5,$countPixel=10
 		imageline($img,rand(0,$width/2),rand(0,$height),rand($width/2,$width),rand(0,$height),imagecolorallocate($img,rand(100,200),rand(100,200),rand(100,200)));
 	}
 	// imagestring($img,$fontSize,rand(0,10),rand(0,10),$string,$colorString);
-	imagettftext($img,$fontSize,rand(-5,5),rand(5,15),rand(25,30),$colorString,'D:\xampp\htdocs\php\front\font\SketchyComic.ttf',$string);
+	imagettftext($img,$fontSize,rand(-5,5),rand(5,15),rand(25,30),$colorString,'D:\xampp\htdocs\reservation\style\SketchyComic.ttf',$string);
 	imagejpeg($img);
 	imagedestroy($img);
 	return $string;
