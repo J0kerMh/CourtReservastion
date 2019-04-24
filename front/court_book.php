@@ -95,7 +95,7 @@ $template['css']=array('style/public.css','style/index.css');
     if(isset($_POST['submit1']))
     {
         echo '<div class="btn-group-toggle " data-toggle="buttons">';
-        $query="select * from court_manage where court_id={$_POST['court_id']} and data='{$_POST['data']}' and id='0'";
+        $query="select * from court_manage where court_id={$_POST['court_id']} and data='{$_POST['data']}' and member_id='0'";
         $result=execute($link,$query);
                         while ($data=mysqli_fetch_assoc($result)){
                             $str=<<<A

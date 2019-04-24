@@ -14,7 +14,7 @@ $template['css']=array('style/public.css','style/index.css');
 <div class="card-deck" style="height:100px;width:80%;margin:57px 0 0 160px;">
 
 	<?php
-		$query="select * from court";
+		$query="select * from court order by id ASC";
 
 		$result=execute($link,$query);
 		while($data=mysqli_fetch_assoc($result))
