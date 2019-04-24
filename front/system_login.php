@@ -14,7 +14,7 @@ if(isset($_POST['submit'])){
 	if(mysqli_num_rows($result)==1){
 		skip('../admin/court.php','ok','登录成功！');
 	}else{
-		skip('system_login.php', 'error', '用户名或密码填写错误！');
+		skip('system_login.php', 'error', '数据库错误');
 	}
 }
 

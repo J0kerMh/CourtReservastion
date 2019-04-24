@@ -12,8 +12,8 @@ if(isset($_POST['submit']))
 	$result=execute($link,$query);
 	if(mysqli_affected_rows($link)==1)
 	{
-		setcookie('sfk[name]', $_POST['name']);
-		setcookie('sfk[pw]',sha1(md5($_POST['pw'])));
+		setcookie('sfk[name]', $_POST['name'],0);
+		setcookie('sfk[pw]',sha1(md5($_POST['pw'])),0);
 		skip('index.php','ok',"注册成功！");
 	}
 	else{

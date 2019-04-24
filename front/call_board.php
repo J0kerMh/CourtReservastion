@@ -9,10 +9,7 @@ $link=connect();
 //     var_dump($_POST);
 //     exit();
 // }
-if(!$member_id=is_login($link)){
-	skip('login.php', 'error', '请登录!');
-}
-
+$member_id=is_login($link);
 $template['title']='场馆预约';
 $template['css']=array('style/public.css');
 ?>

@@ -3,10 +3,8 @@ include_once '../inc/config.inc.php';
 include_once '../inc/mysql.inc.php';
 include_once '../inc/tools.inc.php';
 $link=connect();
-if(!$member_id=is_login($link)){
-	skip('login.php', 'error', '请登录!');
-}
 
+$member_id=is_login($link);
 
 $template['title']='首页';
 $template['css']=array('style/public.css','style/index.css');

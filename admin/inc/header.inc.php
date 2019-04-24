@@ -25,7 +25,7 @@ foreach ($template['css'] as $val){
 	</ul>
 	<div class="login_info">
 		<a href="../front/index.php" style="color:#fff;">网站首页</a>&nbsp;|&nbsp;
-		管理员： admin <a href="#">[注销]</a>
+		管理员： admin <a href="unfinished.php">[注销]</a>
 	</div>
 </div>
 <div id="sidebar">
@@ -33,10 +33,10 @@ foreach ($template['css'] as $val){
 		<li>
 			<div class="small_title">系统</div>
 			<ul class="child">
-				<li><a <?php if(basename($_SERVER['SCRIPT_NAME'])=='court.php'){echo 'class="current"';}?> href="editIntro.php">系统信息</a></li>
-				<li><a href="#">管理员</a></li>
-				<li><a href="#">添加管理员</a></li>
-				<li><a href="#">站点设置</a></li>
+				<li><a class="current"href="unfinished.php">系统信息</a></li>
+				<li><a href="unfinished.php">管理员</a></li>
+				<li><a href="unfinished.php">添加管理员</a></li>
+				<li><a href="unfinished.php">站点设置</a></li>
 			</ul>
 		</li>
 		<li><!--  class="current" -->
@@ -51,14 +51,14 @@ foreach ($template['css'] as $val){
 					}
 				?>
 				<li><a <?php if(basename($_SERVER['SCRIPT_NAME'])=='add_court_manage.php'){echo 'class="current"';}?> href="add_court_manage.php">添加预约时段</a></li>
-				<li><a href="#">订单管理</a></li>
+				<li><a href="unfinished.php">订单管理</a></li>
 				<li><a <?php if(basename($_SERVER['SCRIPT_NAME'])=='call_board_manage.php'){echo 'class="current"';}?> href="call_board_manage.php">发布公告</a></li>
 			</ul>
 		</li>
 		<li>
 			<div class="small_title">用户管理</div>
 			<ul class="child">
-				<li><a href="#">用户列表</a></li>
+				<li><a href="unfinished.php">用户列表</a></li>
 			</ul>
 		</li>
 	</ul>

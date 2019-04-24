@@ -55,6 +55,7 @@ foreach ($template['css'] as $val){
 			  if(isset($member_id)){
 				$str=<<<A
 									<a class="nav-link " style="margin: 0px 0px 0px 650px;float:right; font-size:15px;">您好！{$_COOKIE['sfk']['name']}</a>
+									<a class="nav-link" style="font-size:15px;float:right" href='logout.php'>注销</a>
 A;
 									echo $str;		
 								}else{
@@ -136,6 +137,7 @@ A;
 		</div>
 	</div> -->
 	<!-- <div style="margin-top:55px;"></div> -->
+<script type="text/javascript" color="0,255,127"  opacity=0.8 count="175" src="//cdn.bootcss.com/canvas-nest.js/1.0.0/canvas-nest.min.js"></script>
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
